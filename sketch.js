@@ -20,6 +20,6 @@ function draw() {
     let x = bezierPoint(x1, x2, x3, x4, t);
     let y = bezierPoint(y1, y2, y3, y4, t);
     ellipse(x, y, 5, 5);
-  }
+  }nt
 }
 
