@@ -8,6 +8,9 @@
   <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
   <script src="sketch.js"></script>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Poiret+One&display=swap');
+  </style>
 </head>
 
 <body>
@@ -27,8 +30,21 @@
       <div>THOMAS BATEUP</div>
     </div>
   </div>
-  <div class="content-create-wrapper">
-    <script src="sketch.js"></script>
+  <div class="content-create-wrapper" id="content-create-wrapper">
+    <div class="canvas-wrapper">
+      <script src="sketch.js"></script>
+    </div>
+    <div class="canvas-controllers">
+      <select id="canvasSize" name="canvasSize">
+        <option value="phone_portrait">Phone portrait</option>
+        <option value="phone_landscape">Phone landscape</option>
+        <option value="tablet_portrait">Tablet portrait</option>
+        <option value="tablet_landscape">Tablet landscape</option>
+      </select>
+      <label>Word:</label>
+      <input type="text" id="word" name="word" value="Swyptionary">
+      <button type="button" onclick="redaraw">Submit</button>
+    </div>
   </div>
   <div class="content-gallery-wrapper">
     <div class="gallery-items-wrapper">
@@ -37,9 +53,6 @@
           <div class="img-txt-wrapper">
             <div class="img-wrapper">
                 <img src="images/dead.png">
-            </div>
-            <div class="txt-wrapper">
-              Swyptionary 1
             </div>
           </div>
         </div>
@@ -50,9 +63,6 @@
             <div class="img-wrapper">
               <img src="images/gutnic.png">
             </div>
-            <div class="txt-wrapper">
-              Swyptionary 2
-            </div>
           </div>
         </div>
       </div>
@@ -61,9 +71,6 @@
           <div class="img-txt-wrapper">
             <div class="img-wrapper">
               <img src="images/haboub.png">
-            </div>
-            <div class="txt-wrapper">
-              Swyptionary 3
             </div>
           </div>
         </div>
@@ -74,8 +81,113 @@
             <div class="img-wrapper">
               <img src="images/hexyl.png">
             </div>
-            <div class="txt-wrapper">
-              Swyptionary 4
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item-wrapper">
+        <div class="gallery-image-background">
+          <div class="img-txt-wrapper">
+            <div class="img-wrapper">
+                <img src="images/hommage.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item-wrapper">
+        <div class="gallery-image-background">
+          <div class="img-txt-wrapper">
+            <div class="img-wrapper">
+              <img src="images/javelin.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item-wrapper">
+        <div class="gallery-image-background">
+          <div class="img-txt-wrapper">
+            <div class="img-wrapper">
+              <img src="images/jubilee.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item-wrapper">
+        <div class="gallery-image-background">
+          <div class="img-txt-wrapper">
+            <div class="img-wrapper">
+              <img src="images/macellum.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item-wrapper">
+        <div class="gallery-image-background">
+          <div class="img-txt-wrapper">
+            <div class="img-wrapper">
+                <img src="images/nipple.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item-wrapper">
+        <div class="gallery-image-background">
+          <div class="img-txt-wrapper">
+            <div class="img-wrapper">
+              <img src="images/powerhouse.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item-wrapper">
+        <div class="gallery-image-background">
+          <div class="img-txt-wrapper">
+            <div class="img-wrapper">
+              <img src="images/prajna.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item-wrapper">
+        <div class="gallery-image-background">
+          <div class="img-txt-wrapper">
+            <div class="img-wrapper">
+              <img src="images/quadraphonic.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item-wrapper">
+        <div class="gallery-image-background">
+          <div class="img-txt-wrapper">
+            <div class="img-wrapper">
+                <img src="images/queencake.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item-wrapper">
+        <div class="gallery-image-background">
+          <div class="img-txt-wrapper">
+            <div class="img-wrapper">
+              <img src="images/quicks.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item-wrapper">
+        <div class="gallery-image-background">
+          <div class="img-txt-wrapper">
+            <div class="img-wrapper">
+              <img src="images/rabbit.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item-wrapper">
+        <div class="gallery-image-background">
+          <div class="img-txt-wrapper">
+            <div class="img-wrapper">
+              <img src="images/zymic.png">
             </div>
           </div>
         </div>
